@@ -23,6 +23,41 @@ public class TiposVariaveis {
         int divisao = 15 / 3;
         int modulo = 18 % 5; // representa o resto da divisao
 
+        // operadores unarios
+
+        // de valor positivo
+        int numero = 5;
+
+        // de valor negativo
+        numero = - numero; //convertendo em negativo
+        System.out.println(numero);
+        numero = + numero;
+        System.out.println(numero);
+
+        // de incremento de valor
+        numero += 1;
+        System.out.println(numero);
+
+        numero += numero;
+        System.out.println(numero);
+
+        // de decremento de valor
+        numero -= 1;
+        System.out.println(numero);
+
+        // de negaçao, usadas nas verificaçoes logicas das aplicaçoes
+        boolean variavelSim = true;
+        System.out.println(variavelSim);
+
+        variavelSim = !variavelSim; //negacao de variavel booleana
+        System.out.println(variavelSim);
+
+        boolean variavelNao = false;
+        System.out.println(variavelNao);
+
+        variavelNao = !variavelNao;
+        System.out.println(variavelNao);
+        
 
 
     }
