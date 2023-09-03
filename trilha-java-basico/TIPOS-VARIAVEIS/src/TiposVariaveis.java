@@ -58,7 +58,25 @@ public class TiposVariaveis {
         variavelNao = !variavelNao;
         System.out.println(variavelNao);
         
+        // operadores ternarios ? - :
 
+        int a, b;
+        String resultado = "";
 
+         a = 5;
+         b = 6;
+
+        // EXEMPLO DE CONDICIONAL USANDO A ESTRUTURA IF/ELSE
+
+        if(a == b)
+            resultado = "Verdadeiro";
+            
+        else
+            resultado = "Falso";
+            
+        System.out.println(resultado);
+
+        // EXEMPLO DE CONDICIONAL USANDO A ESTRUTURA TERNARIA
+        String result = a==b ? "true" : "false";
     }
 }
