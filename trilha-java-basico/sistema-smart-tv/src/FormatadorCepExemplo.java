@@ -5,7 +5,7 @@ public class FormatadorCepExemplo {
             System.out.println(cepFormatado);
         } catch (CepInvalidoException e) {
             // TODO Auto-generated catch block
-            e.printStackTrace(); // esse trecho e substituido
+            e.printStackTrace(); // esse trecho e substituido. Iserir o tratamento de excessao
         }
         
     }
