@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.Locale;
+import java.util.InputMismatchException;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -19,10 +21,24 @@ public class App {
         Scanner scanner =  new Scanner(System.in);
 
         double salarioBase = 2000.00;
-        double salarioPretendido;
-
+        try{
         System.out.println("Qual o seu salário pretendido? ");
-        salarioPretendido = scanner.nextDouble();
-        System.out.println("Salario informado" + salarioPretendido);
+        double salarioPretendido = scanner.nextDouble();
+
+        if(salarioPretendido < salarioBase) 
+            System.out.println("LIGAR PARA CANDIDATO");
+        
+        else if(salarioPretendido == salarioBase)
+            System.out.println("LIGAR PARA O CANDIDATO, COM CONTRA PROPOSTA");
+
+        else
+            System.out.println("AGUARDANDO RESULTADO DOS DEMAIS CANDIDATOS");
+        }
+        catch(InputMismatchException e){
+            System.out.println("INSIRA UM VALOR VÁLIDO");
+        };
+        
+       
     }
+    
 }
