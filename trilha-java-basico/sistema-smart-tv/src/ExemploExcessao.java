@@ -13,7 +13,7 @@ public class ExemploExcessao {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        tr
+        
 
        // valor = NumberFormat.getInstance().parse("a1.75");
         
